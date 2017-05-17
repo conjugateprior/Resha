@@ -2,4 +2,4 @@
 
 export(add_stem)
 export(add_stems)
-export(stem)
+export(wordStem)

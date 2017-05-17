@@ -4,6 +4,7 @@ get_resha <- function(){
   resha <- get0("resha", envir=reshaEnv)
   if (is.null(resha)){
     message("Constructing the stemmer")
+    # resha_data is from sysdata.rda
     resha <- hashmap::hashmap(resha_data$token, resha_data$stem)
     assign("resha", resha, reshaEnv)
   }
@@ -18,15 +19,20 @@ get_resha <- function(){
 #' before are stemmed and the remainder discarded.
 #'
 #' This code should work the same way as the original Java implementation.
+#' The interface on the other hand is designed to work feel like
+#' the \code{SnowballC} package.
+#'
 #'
 #' @param x A token or a vector of tokens
+#' @param ... Extra arguments, currently ignored
+#'
 #'
 #' @return A stemmed token or vector of stemmed tokens, or the originals if no stems could be found
 #' @export
 #'
 #' @examples
 #'   toks <- c("kitapçığında", "kitapçıdaki", "İstanbul'da")
-#'   stem(toks)
+#'   wordStem(toks)
 #'   # "kitapçık" "kitapçı"  "İstanbul"
 #'
 #' @references
@@ -35,7 +41,7 @@ get_resha <- function(){
 #'
 #' Nuve: \url{https://github.com/hrzafer/nuve}
 #'
-stem <- function(x){
+wordStem <- function(x, ...){
   resha <- get_resha() # or construct it as necessary
   trunc_match <- regexpr("'", x)
   trunc <- trunc_match > -1
