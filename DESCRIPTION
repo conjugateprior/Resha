@@ -1,0 +1,15 @@
+Package: Resha
+Type: Package
+Title: Stem Turkish More Gently Than Snowball
+Version: 0.1.0
+Author: Will Lowe
+Maintainer: Will Lowe <wlowe@princeton.edu>
+Description: An R version of Harun Reşit Zafer's Turkish stemmer 'resha'.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends:
+    R (>= 2.10)
+Imports:
+    hashmap
+LazyData: true
+RoxygenNote: 5.0.1
