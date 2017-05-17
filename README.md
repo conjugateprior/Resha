@@ -1,6 +1,7 @@
-# Resha: Stem Turkish more gently than Snowball
+# Resha
 
-This is an R version of Harun Reşit Zafer's Turkish stemmer 'resha', which you
-can find [here](https://github.com/hrzafer/resha-turkish-stemmer).
+## Stem Turkish more gently than Snowball
+
+This is an R version of Harun Reşit Zafer's [resha-turkish-stemmer](https://github.com/hrzafer/resha-turkish-stemmer).
 
 Will Lowe 2017
