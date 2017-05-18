@@ -22,6 +22,10 @@ get_resha <- function(){
 #' The interface on the other hand is designed to work feel like
 #' the \code{SnowballC} package.
 #'
+#' Note: This function assumes that all proper nouns are capitalized and
+#' other words are not.  (The stemmer is built around a look up table) so
+#' you may wish to check that non-proper nouns starting sentences are
+#' lowercased appropriately in the input.
 #'
 #' @param x A token or a vector of tokens
 #' @param ... Extra arguments, currently ignored
@@ -73,7 +77,8 @@ add_stem <- function(token, stem){
 
 #' Add a file of new token-stems pairs
 #'
-#' The file should have lines of the form <token>[tab]<stem>. Empty lines and
+#' The file should have lines of the form <token>[whitespace]<stem>.
+#' Empty lines and
 #' lines starting with # will be ignored.  An example of the correct format
 #' is \code{system.file("extdata", "manual.dict", package = "Resha")}
 #'
