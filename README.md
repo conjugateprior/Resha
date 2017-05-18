@@ -1,3 +1,5 @@
+[![Travis-CI Build Status](https://travis-ci.org/conjugateprior/Resha.svg?branch=master)](https://travis-ci.org/conjugateprior/Resha)
+
 # Resha
 
 ## Stem Turkish more gently than Snowball
