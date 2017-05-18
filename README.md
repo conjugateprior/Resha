@@ -1,5 +1,3 @@
-[![Travis-CI Build Status](https://travis-ci.org/conjugateprior/Resha.svg?branch=master)](https://travis-ci.org/conjugateprior/Resha)
-
 # Resha
 
 ## Stem Turkish more gently than Snowball
@@ -13,3 +11,5 @@ devtools::install_github("conjugateprior/Resha")
 ```
 
 Will Lowe 2017
+
+[![Travis-CI Build Status](https://travis-ci.org/conjugateprior/Resha.svg?branch=master)](https://travis-ci.org/conjugateprior/Resha) [![codecov](https://codecov.io/gh/conjugateprior/Resha/branch/master/graph/badge.svg)](https://codecov.io/gh/conjugateprior/Resha)
