@@ -30,21 +30,17 @@ get_resha <- function(){
 #' @param x A token or a vector of tokens
 #' @param ... Extra arguments, currently ignored
 #'
-#'
 #' @return A stemmed token or vector of stemmed tokens, or the originals if no stems could be found
 #' @export
 #'
 #' @examples
 #'   toks <- c("kitapçığında", "kitapçıdaki", "İstanbul'da")
 #'   wordStem(toks)
-#'   # "kitapçık" "kitapçı"  "İstanbul"
 #'
-#' @references
-#'
-#' Resha: \url{https://github.com/hrzafer/resha-turkish-stemmer}
-#'
-#' Nuve: \url{https://github.com/hrzafer/nuve}
-#'
+#' @references \itemize{
+#'   \item{Resha}{\url{https://github.com/hrzafer/resha-turkish-stemmer}},
+#'   \item{Nuve}{\url{https://github.com/hrzafer/nuve}}
+#' }
 wordStem <- function(x, ...){
   resha <- get_resha() # or construct it as necessary
   trunc_match <- regexpr("'", x)
@@ -63,7 +59,7 @@ wordStem <- function(x, ...){
 #' @param token A new token
 #' @param stem Its stem
 #'
-#' @return Nothing
+#' @return None
 #' @export
 #'
 #' @examples
@@ -86,8 +82,7 @@ add_stem <- function(token, stem){
 #' between package loadings.
 #'
 #' @param fname Name of the file
-#'
-#' @return Nothing
+#' @return None
 #' @export
 #'
 #' @examples
