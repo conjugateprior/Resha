@@ -4,6 +4,8 @@ Title: Stem Turkish More Gently than Snowball
 Version: 0.2.1
 Authors@R: person("Will", "Lowe", email = "wlowe@princeton.edu", role = c("aut", "cre"))
 Description: An R version of Harun Reşit Zafer's Turkish stemmer 'resha'.
+URL: https://conjugateprior.github.io/Resha
+BugReports: https://github.com/conjugateprior/Resha/issues
 License: MIT + file LICENSE
 Encoding: UTF-8
 Depends:
