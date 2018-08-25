@@ -24,16 +24,20 @@ before are stemmed and the remainder discarded.
 This code should work the same way as the original Java implementation.
 The interface on the other hand is designed to work feel like
 the \code{SnowballC} package.
+
+Note: This function assumes that all proper nouns are capitalized and
+other words are not.  (The stemmer is built around a look up table) so
+you may wish to check that non-proper nouns starting sentences are
+lowercased appropriately in the input.
 }
 \examples{
   toks <- c("kitapçığında", "kitapçıdaki", "İstanbul'da")
   wordStem(toks)
-  # "kitapçık" "kitapçı"  "İstanbul"
 
 }
 \references{
-Resha: \url{https://github.com/hrzafer/resha-turkish-stemmer}
-
-Nuve: \url{https://github.com/hrzafer/nuve}
+\itemize{
+  \item{Resha}{\url{https://github.com/hrzafer/resha-turkish-stemmer}},
+  \item{Nuve}{\url{https://github.com/hrzafer/nuve}}
 }
-
+}

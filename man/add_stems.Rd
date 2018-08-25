@@ -10,10 +10,11 @@ add_stems(fname)
 \item{fname}{Name of the file}
 }
 \value{
-Nothing
+None
 }
 \description{
-The file should have lines of the form <token>[tab]<stem>. Empty lines and
+The file should have lines of the form <token>[whitespace]<stem>.
+Empty lines and
 lines starting with # will be ignored.  An example of the correct format
 is \code{system.file("extdata", "manual.dict", package = "Resha")}
 }
@@ -26,4 +27,3 @@ newfile <- system.file("extdata", "manual.dict", package = "Resha")
 add_stems(newfile)
 
 }
-

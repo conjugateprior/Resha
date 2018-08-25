@@ -12,7 +12,7 @@ add_stem(token, stem)
 \item{stem}{Its stem}
 }
 \value{
-Nothing
+None
 }
 \description{
 This overwrites or augments the package's existing token to stem mapping.
@@ -21,4 +21,3 @@ This overwrites or augments the package's existing token to stem mapping.
 add_stem("zürriyetindensin", "zürriyet")
 
 }
-
